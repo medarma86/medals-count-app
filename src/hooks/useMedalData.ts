@@ -14,8 +14,8 @@ export function useMedalData() {
   return useQuery({
     queryKey: ['medals'],
     queryFn: fetchMedals,
-    staleTime: 60 * 1000, // 1 minute cache
-    // retry: 2 // Will retry failed requests 2 times - I think default is 3, need to check and remove this if needed
+    // staleTime: 60 * 1000, // 1 minute cache - configured under defaultOptions in ReactQueryProvider.tsx
+    // retry: 2 // configured  as 3 under defaultOptions in ReactQueryProvider.tsx and it
   });
 
 }
