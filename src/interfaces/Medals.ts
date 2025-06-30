@@ -10,3 +10,8 @@ export interface MedalEntry {
 export interface IMedalService {
   fetchMedals(): Promise<MedalEntry[]>;
 }
+
+export interface CountryMedal extends MedalEntry {
+  flagIndex: number;
+  total: number;
+}
