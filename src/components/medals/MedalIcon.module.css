@@ -1,0 +1,42 @@
+.medal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* Sizes */
+.sm {
+  width: 16px;
+  height: 16px;
+  font-size: 0.7rem;
+}
+
+.md {
+  width: 24px;
+  height: 24px;
+  font-size: 0.9rem;
+}
+
+.lg {
+  width: 32px;
+  height: 32px;
+  font-size: 1rem;
+}
+
+/* Medal colors */
+.gold {
+  background: radial-gradient(circle at 30% 30%, #FFD700, #D4AF37);
+  box-shadow: 0 0 4px rgba(212, 175, 55, 0.8);
+}
+
+.silver {
+  background: radial-gradient(circle at 30% 30%, #E6E6E6, #C0C0C0);
+  box-shadow: 0 0 4px rgba(192, 192, 192, 0.8);
+}
+
+.bronze {
+  background: radial-gradient(circle at 30% 30%, #CD7F32, #A67C52);
+  box-shadow: 0 0 4px rgba(205, 127, 50, 0.8);
+}

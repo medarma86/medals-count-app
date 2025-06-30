@@ -15,3 +15,8 @@ export interface CountryMedal extends MedalEntry {
   flagIndex: number;
   total: number;
 }
+
+export interface MedalRowProps {
+  country: CountryMedal;
+  rank: number;
+}
