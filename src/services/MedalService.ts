@@ -1,5 +1,7 @@
 
 import { IMedalService, MedalEntry } from '@/interfaces/Medals';
+import { ValidationError } from '@/utils/api/errors/validationError';
+import { logError } from '@/utils/api/logger';
 import { promises as fs } from 'fs';
 import path from 'path';
 
@@ -13,12 +15,12 @@ export class MedalService implements IMedalService {
 
       // Basic validation
       if (!Array.isArray(parsedData)) {
-        throw new Error('Expected medal data array.');
+       throw new ValidationError('Expected medal data array.');
       }
 
       return parsedData as MedalEntry[];
     } catch (error) {
-      console.error(`Failed to read medal data from ${this.filePath}`, error); //remove this before pushing to production
+      logError(`Failed to read medal data from ${this.filePath}`, error);
       throw new Error('Failed to read medal data'); // generic message for caller
     }
   }

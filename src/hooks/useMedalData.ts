@@ -6,7 +6,7 @@ import { transformMedalData } from '@/utils/ui/medals';
 import { useQuery } from '@tanstack/react-query';
 
 export async function fetchMedals(): Promise<CountryMedal[]> {  // we can separate this logic to another component if needed but might need to make it more generic, might not worth but depends of use case
-  const data = await apiGet<CountryMedal[]>(API_ENDPOINTS.MEDALS); // move api url to a constant 
+  const data = await apiGet<CountryMedal[]>(API_ENDPOINTS.MEDALS); 
   return transformMedalData(data);
 }
 
