@@ -1,3 +1,5 @@
+
+// Alphabetical order matches flags.png sprite
 export const COUNTRY_CODES = [
   'AUT', 'BLR', 'CAN', 'CHN', 'FRA', 'GER',
   'ITA', 'NED', 'NOR', 'RUS', 'SUI', 'SWE', 'USA'

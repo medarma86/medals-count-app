@@ -1,0 +1,36 @@
+/* .flag {
+  display: inline-block;
+  background-image: url('/flags.png');
+  background-repeat: no-repeat;
+  border: 1px solid #eee;
+}
+
+// sizes 
+.flag.sm {
+  width: 40px;
+  height: 30px;
+  background-size: 40px auto;
+}
+
+.flag.md {
+  width: 80px;
+  height: 60px;
+  background-size: 80px auto;
+}
+
+.flag.lg {
+  width: 120px;
+  height: 90px;
+  background-size: 120px auto;
+}
+
+//error fallback
+.error {
+  font-size: 24px;
+} */
+
+/* Flag.module.css */
+.flag {
+  display: inline-block;
+  background-repeat: no-repeat;
+}
